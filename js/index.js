@@ -48,7 +48,7 @@ function showProducts(products){
     }
     let result = "";
     for(let i = 0;i < products.length; i++){
-        product = products[i];
+        const product = products[i];
         result += `
         <div class="colum mx-auto">
           <a href="detail.html?id=${product.id}" class="colum-img">
@@ -77,4 +77,4 @@ function showProducts(products){
     }
     return result;
 }
-document.getElementById('products').innerHTML = showProducts(productsList)
+document.getElementById('products').innerHTML = showProducts(productsList);
