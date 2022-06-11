@@ -36,7 +36,7 @@ function showProducts(products){
     }
     let result = "";
     for(let i = 0;i < products.length; i++){
-        product = products[i];
+        const product = products[i];
         result += `
         <div class="colum mx-auto xl:mx-0">
                     <div class="colum-img">
